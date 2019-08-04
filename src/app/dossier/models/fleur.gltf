@@ -1,0 +1,198 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Microsoft GLTF Exporter 2.4.2.8"
+  },
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5123,
+      "count": 59280,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 12216,
+      "type": "VEC3",
+      "max": [
+        0.99034583568573,
+        3.4169623851776123,
+        1.0974795818328857
+      ],
+      "min": [
+        -0.9032919406890869,
+        0.00009117089211940765,
+        -0.5838888883590698
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 12216,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 12216,
+      "type": "VEC2"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 118560,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 118560,
+      "byteLength": 146592,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 265152,
+      "byteLength": 146592,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 411744,
+      "byteLength": 97728,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "fleur_data.bin",
+      "byteLength": 509472
+    }
+  ],
+  "images": [
+    {
+      "uri": "fleur_img0.png"
+    },
+    {
+      "uri": "fleur_img1.png"
+    },
+    {
+      "uri": "fleur_img2.png"
+    },
+    {
+      "uri": "fleur_img3.png"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicRoughnessTexture": {
+          "index": 3
+        }
+      },
+      "alphaMode": "MASK",
+      "name": "42",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseTexture": {
+            "index": 0
+          },
+          "specularGlossinessTexture": {
+            "index": 1
+          }
+        }
+      },
+      "extras": {
+        "MSFT_sRGBFactors": false
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "mesh_id31",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "root"
+    },
+    {
+      "translation": [
+        0.043703943490982056,
+        -0.22612594068050385,
+        0.12007004767656326
+      ],
+      "rotation": [
+        -0.03211069107055664,
+        -0.1314694881439209,
+        -0.062164656817913055,
+        0.9888479113578796
+      ],
+      "scale": [
+        0.1498447209596634,
+        0.149844691157341,
+        0.1498446762561798
+      ],
+      "mesh": 0,
+      "name": "node_id30"
+    }
+  ],
+  "samplers": [
+    {
+      "minFilter": 9985
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "textures": [
+    {
+      "name": "texture5",
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "name": "texture7",
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "name": "42_bc",
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "name": "42_mr",
+      "sampler": 0,
+      "source": 3
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ]
+}

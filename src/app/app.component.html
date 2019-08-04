@@ -1,21 +1,50 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Site E-Commerce</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a routerLink="produit">Home</a></li>
+            <li class="active"><a routerLink="insertProduct">espace Vendeur</a></li>
+            <li class="active"><a routerLink="tests">Voir des tempales</a></li>
+            <li class="active"><a routerLink="#">About</a></li>
+            
+            <li _ngcontent-yra-c4="" class="dropdown">
+            <a _ngcontent-yra-c4="" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+              Contact Us 
+              <span _ngcontent-yra-c4="" class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" style="background-color: rgb(98, 183, 209)">
+              <li>  Email:intellcap@gmail.com   </li> 
+              
+              <li _ngcontent-yra-c4="">   Phone:+2120655323232   </li>
+            </ul>  
+            </li>
 
-<router-outlet></router-outlet>
+            <ul class="nav navbar-nav">
+                <li><a routerLink="auth" *ngIf="!authStatus"><button class="btn btn-primary" >signIn</button></a></li>
+                <li><a routerLink="signup"><button class="btn btn-success">signUp</button></a>
+                </li>
+            </ul>
+            <a><i class='far fa-clipboard' style='font-size:48px;color:red'>{{nombre}}</i></a>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
