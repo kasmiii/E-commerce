@@ -16,7 +16,7 @@ import { ProduitComponent } from './produit/produit.component';
 //le routage
 const appRoutes:Routes=[
   {path:'auth',component:AuthComponent},
-  {path:'produit',component:ProduitComponent},
+  //{path:'produit',component:ProduitComponent},
   {path:'signup',component:SignupComponent},
   {path:'insertProduct',canActivate: [AuthGuard],component:InsertProductComponent},
   {path:'tests',component:TestComponent},

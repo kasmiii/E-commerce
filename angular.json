@@ -25,8 +25,7 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/assets/scripts/model3d.js"
+              "src/assets"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
